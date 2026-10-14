@@ -1,6 +1,6 @@
 body {
-  background-color: #ffc0cb;
-  color: #292929;
+  background-color: #e8ecf0;
+  color: #222222;
   font-family: Arial, "Meiryo", sans-serif;
 }
 
@@ -10,90 +10,75 @@ body {
 }
 
 #one {
-  border-top: 8px solid #800000;
-  border-bottom: 2px solid #800000;
   padding: 20px;
-}
-
-#one img {
-  width: 180px;
-  height: auto;
+  border-top: 6px solid #20364d;
 }
 
 h1 {
-  color: #800000;
-  font-size: 32px;
-  margin: 15px 0;
+  margin: 0;
+  color: #20364d;
+  font-size: 30px;
 }
 
 h2 {
-  color: #800000;
+  color: #20364d;
   font-size: 20px;
+}
+
+ul.ddmenu {
+  margin: 0;
+  padding: 0;
+  background-color: #20364d;
+}
+
+ul.ddmenu li {
+  width: 180px;
+  display: inline-block;
+  list-style-type: none;
+  position: relative;
+  vertical-align: top;
+}
+
+ul.ddmenu a {
+  background-color: #20364d;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
+ul.ddmenu ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+ul.ddmenu ul li {
+  display: block;
+}
+
+ul.ddmenu a:hover,
+ul.ddmenu a:focus {
+  background-color: #c9dbea;
+  color: #20364d;
+}
+
+ul.ddmenu li:hover > ul,
+ul.ddmenu li:focus-within > ul {
+  display: block;
+}
+
+#three {
+  padding: 20px;
 }
 
 p {
   font-size: 14px;
   line-height: 1.8;
-}
-
-#two {
-  overflow: hidden;
-  padding: 25px 0;
-  border-bottom: 2px solid #800000;
-}
-
-.shop {
-  width: 320px;
-  float: left;
-}
-
-.shop img {
-  display: block;
-  width: 100%;
-}
-
-.welcome {
-  width: 600px;
-  float: right;
-}
-
-.welcome h2 {
-  margin-top: 0;
-}
-
-#three {
-  margin-top: 25px;
-}
-
-.row {
-  overflow: hidden;
-  margin-bottom: 25px;
-}
-
-.cakes {
-  width: 440px;
-  float: left;
-  margin: 0 10px;
-  padding: 10px;
-  border-top: 4px solid #800000;
-}
-
-.cakes h2 {
-  margin: 5px 0 15px;
-}
-
-.cakes img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-#footer {
-  border-top: 2px solid #800000;
-  padding: 10px 0;
-  text-align: right;
-}
-
-#footer p {
-  font-size: 12px;
 }
